@@ -1,0 +1,198 @@
+.button.is-semilarge {
+    padding: 22px 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+
+.button.is-yellow90 {
+    background-color: var(--yellow90);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-yellow90[disabled] {
+    background: var(--yellow90);
+    opacity: 0.7;
+}
+.button.is-yellow90.is-hovered, .button.is-yellow90:hover {
+    background-color: var(--yellow85);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-yellow90.is-focused:not(:active), .button.is-yellow90:focus:not(:active) {
+    box-shadow: 0 0 0 .125em rgba(244, 211, 1, 0.25)
+}
+.button.is-yellow90.is-active, .button.is-yellow90:active {
+    background-color: var(--yellow90);
+    border-color: transparent;
+}
+.button.is-yellow90.is-outlined {
+    background-color: var(--yellow20);
+    border-color: var(--yellow90);
+    color: var(--yellow90);
+    transition: 0.5s background-color, 0.5s color;
+}
+.button.is-yellow90.is-outlined:hover {
+    background-color: var(--yellow90);
+    border-color: var(--yellow90);
+    color: var(--yellow20)
+}
+
+
+.button.is-purple90 {
+    background-color: var(--purple90);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-purple90[disabled] {
+    background: var(--purple90);
+    opacity: 0.7;
+}
+.button.is-purple90.is-hovered, .button.is-purple90:hover {
+    background-color: var(--purple80);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-purple90.is-focused:not(:active), .button.is-purple90:focus:not(:active) {
+    box-shadow: 0 0 0 .125em rgba(174, 0, 209, 0.25)
+}
+.button.is-purple90.is-active, .button.is-purple90:active {
+    background-color: var(--purple90);
+    border-color: transparent;
+}
+.button.is-purple90.is-outlined {
+    background-color: var(--purpleWhite30);
+    border-color: var(--purple90);
+    color: var(--purple90);
+    transition: 0.5s background-color, 0.5s color;
+}
+.button.is-purple90.is-outlined:hover {
+    background-color: var(--purple90);
+    border-color: var(--purple90);
+    color: var(--purpleWhite30)
+}
+
+
+
+
+.button.is-purple70 {
+    background-color: var(--purple70);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-purple70[disabled] {
+    background: var(--purple70);
+    opacity: 0.7;
+}
+.button.is-purple70.is-hovered, .button.is-purple70:hover {
+    background-color: var(--purple60);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-purple70.is-focused:not(:active), .button.is-purple70:focus:not(:active) {
+    box-shadow: 0 0 0 .125em rgba(174, 0, 209, 0.25)
+}
+.button.is-purple70.is-active, .button.is-purple70:active {
+    background-color: var(--purple70);
+    border-color: transparent;
+}
+.button.is-purple70.is-outlined {
+    background-color: var(--purpleWhite30);
+    border-color: var(--purple70);
+    color: var(--purple70);
+    transition: 0.5s background-color, 0.5s color;
+}
+.button.is-purple70.is-outlined:hover {
+    background-color: var(--purple70);
+    border-color: var(--purple70);
+    color: var(--purpleWhite30)
+}
+
+
+
+.button.is-purple50 {
+    background-color: var(--purple50);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-purple50[disabled] {
+    background: var(--purple50);
+    opacity: 0.7;
+}
+.button.is-purple50.is-hovered, .button.is-purple50:hover {
+    background-color: var(--purple60);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-purple50.is-focused:not(:active), .button.is-purple50:focus:not(:active) {
+    box-shadow: 0 0 0 .125em rgba(174, 0, 209, 0.25)
+}
+.button.is-purple50.is-active, .button.is-purple50:active {
+    background-color: var(--purple70);
+    border-color: transparent;
+}
+.button.is-purple50.is-outlined {
+    background-color: var(--purpleWhite30);
+    border-color: var(--purple50);
+    color: var(--purple50);
+    transition: 0.5s background-color, 0.5s color;
+}
+.button.is-purple50.is-outlined:hover {
+    background-color: var(--purple50);
+    border-color: var(--purple50);
+    color: var(--purpleWhite30)
+}
+
+
+.button.borderBold{
+    border-width: 2px;
+}
+.button.textBold{
+    font-weight: 500;
+}
+
+
+.has-text-purple90 {
+    color: var(--purple90);
+}
+.has-text-purple70 {
+    color: var(--purple80);
+}
+.has-text-purple50 {
+    color: var(--purple50);
+}
+
+.has-text-yellow90 {
+    color: var(--yellow90);
+}
+.has-text-yellow80 {
+    color: var(--yellow80);
+}
+.has-text-yellow70 {
+    color: var(--yellow70);
+}
+.has-text-yellow30 {
+    color: var(--yellow30);
+}
+.has-text-yellow20 {
+    color: var(--yellow20);
+}
+.has-text-yellow08 {
+    color: var(--yellow08);
+}
+
+
+
+
+.text-centered-vertcJust {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.text-centered-vertcJust .button{
+    width: fit-content !important;
+}
+
+
