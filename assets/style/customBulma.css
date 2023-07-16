@@ -153,33 +153,39 @@
 }
 
 
+.button.semi{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
 .has-text-purple90 {
-    color: var(--purple90);
+    color: var(--purple90) !important;
 }
 .has-text-purple70 {
-    color: var(--purple80);
+    color: var(--purple80) !important;
 }
 .has-text-purple50 {
-    color: var(--purple50);
+    color: var(--purple50) !important;
 }
 
 .has-text-yellow90 {
-    color: var(--yellow90);
+    color: var(--yellow90) !important;
 }
 .has-text-yellow80 {
-    color: var(--yellow80);
+    color: var(--yellow80) !important;
 }
 .has-text-yellow70 {
-    color: var(--yellow70);
+    color: var(--yellow70) !important;
 }
 .has-text-yellow30 {
-    color: var(--yellow30);
+    color: var(--yellow30) !important;
 }
 .has-text-yellow20 {
-    color: var(--yellow20);
+    color: var(--yellow20) !important;
 }
 .has-text-yellow08 {
-    color: var(--yellow08);
+    color: var(--yellow08) !important;
 }
 
 

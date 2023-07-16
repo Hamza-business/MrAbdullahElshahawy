@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>منصة مستر عبدالله الشهاوي</title>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#8e44ad">
+    <meta name="description" content="منصة مستر عبدالله الشهاوي هي منصة تقدم لك شرح منظّم ودقيق مع سهولة الوصول لما تحتاجه.">
+    <meta name="keywords" content="منصة مستر عبدالله الشهاوي, منصة, عبدالله الشهاوي, عربي, اللغة العربية, التعليم الثانوي, الثانوي, عربي ثانوية عامة, مستر عبدالله الشهاوي, المداد, منصة المداد التعليمية, ثانوية عامة, مصر">
+    <meta name="author" content="Mr Abdullah Elshahawy">
+    
+    <link rel="icon" href="/assets/images/logo/navlogo.png">
+    <link rel='stylesheet' type='text/css' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/bulma-rtl.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/main.css'>
+</head>
+
+<body>
+
+    <div style="display: none" id="pageTitle">dashboard</div>
+    <header class="navbar" role="navigation" aria-label="main navigation" class="linksMenu">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="/">
+                <img src="/assets/images/logo/navlogo.png">
+            </a>
+            <button class="navbar-burger" aria-label="menu" onclick="navshow()" wfd-invisible="true">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    
+        <div id="navbarElements" class="navbar-menu navbarElements">
+            <div class="navbar-start">
+                <a href="/" whtpg="home" class="navbar-item"><i class="fas fa-home"></i><span>الرئيسية</span></a>
+                <a href="/learn" whtpg="learn" class="navbar-item"><i class="fa-solid fa-tv"></i><span>المحاضرات</span></a>
+                <a href="/sheets" whtpg="sheets" class="navbar-item"><i class="fa-solid fa-sheet-plastic"></i><span>الملازم</span></a>
+            </div>
+    
+            <div class="navbar-end">
+                <button class="button none navbar-item responsivePadd" showPop="notifications"><i class="fa-solid fa-bell"></i></button>
+                <a class="navbar-item" whtpg="dashboard" href="/dashboard"><i class="fas fa-user-circle"></i></a>
+                <div class="navbar-item">
+                    <a href="/login" class="button is-purple70 is-outlined borderBold textBold"><i class="fa-regular fa-user"></i> الدخول \ الانضمام</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contentBox">
+        <section class="section customized form">
+            <div class="container">
+                <div class="columns is-multiline is-centered">
+                    <div class="column is-7 has-text-centered registerCol is-gradientY19">
+                        <div class="has-text-centered text-centered-vertc">
+                            <h2 class="title is-size-3 has-text-grey-lighter">مرحبا مرة اخرى!</h2>
+                            <p class="is-size-5 has-text-yellow70 has-text-weight-medium">سجل دخول واستكمل تعلمك</p>
+                        </div>
+                    </div>
+                    <div class="column is-7 registerCol2">
+                        <p class="is-size-3">تسجيل الدخول</p>
+                        <p class="is-size-55 has-text-weight-medium">اذا كان لديك حساب قم بتسجيل الدخول</p>
+                        <br>
+                        <form>
+                            <div class="field">
+                                <label class="label has-text-grey">البريد الالكتروني</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="email" placeholder="ادخل البريد الالكتروني">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <label class="label has-text-grey">كلمة المرور</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="password" placeholder="ادخل كلمة المرور">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="is-flex is-align-items-center is-justify-content-space-between">
+                                <button class="button is-purple50 is-semilarge">تسجيل الدخول</button>
+                                <a href="/register/" class="has-text-weight-semibold has-text-purple50">ليس لدي حساب <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                            <div class="has-text-centered">
+                                <a href="/forgotpass/" class="has-text-weight-semibold has-text-purple70">نسيت الباسوورد 🥴 ؟</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>          
+    </div>
+
+</body>
+</html>
+<script src='/assets/js/main.js'></script>

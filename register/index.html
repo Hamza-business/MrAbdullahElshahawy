@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>منصة مستر عبدالله الشهاوي</title>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#8e44ad">
+    <meta name="description" content="منصة مستر عبدالله الشهاوي هي منصة تقدم لك شرح منظّم ودقيق مع سهولة الوصول لما تحتاجه.">
+    <meta name="keywords" content="منصة مستر عبدالله الشهاوي, منصة, عبدالله الشهاوي, عربي, اللغة العربية, التعليم الثانوي, الثانوي, عربي ثانوية عامة, مستر عبدالله الشهاوي, المداد, منصة المداد التعليمية, ثانوية عامة, مصر">
+    <meta name="author" content="Mr Abdullah Elshahawy">
+    
+    <link rel="icon" href="/assets/images/logo/navlogo.png">
+    <link rel='stylesheet' type='text/css' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/bulma-rtl.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/main.css'>
+</head>
+
+<body>
+
+    <div style="display: none" id="pageTitle">dashboard</div>
+    <header class="navbar" role="navigation" aria-label="main navigation" class="linksMenu">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="/">
+                <img src="/assets/images/logo/navlogo.png">
+            </a>
+            <button class="navbar-burger" aria-label="menu" onclick="navshow()" wfd-invisible="true">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    
+        <div id="navbarElements" class="navbar-menu navbarElements">
+            <div class="navbar-start">
+                <a href="/" whtpg="home" class="navbar-item"><i class="fas fa-home"></i><span>الرئيسية</span></a>
+                <a href="/learn" whtpg="learn" class="navbar-item"><i class="fa-solid fa-tv"></i><span>المحاضرات</span></a>
+                <a href="/sheets" whtpg="sheets" class="navbar-item"><i class="fa-solid fa-sheet-plastic"></i><span>الملازم</span></a>
+            </div>
+    
+            <div class="navbar-end">
+                <button class="button none navbar-item responsivePadd" showPop="notifications"><i class="fa-solid fa-bell"></i></button>
+                <a class="navbar-item" whtpg="dashboard" href="/dashboard"><i class="fas fa-user-circle"></i></a>
+                <div class="navbar-item">
+                    <a href="/login" class="button is-purple70 is-outlined borderBold textBold"><i class="fa-regular fa-user"></i> الدخول \ الانضمام</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contentBox">
+        <section class="section customized form">
+            <div class="container">
+                <div class="columns is-multiline is-centered">
+                    <div class="column is-7 has-text-centered registerCol is-gradientY19">
+                        <div class="has-text-centered text-centered-vertc">
+                            <h2 class="title is-size-3 has-text-grey-lighter">مرحبا بك في المنصة!</h2>
+                            <p class="is-size-5 has-text-yellow70 has-text-weight-medium">افضل منصة عربية لتعليم اللغة العربية لطلاب الثانوية العامة بطرق مبسطة ممتعة!</p>
+                        </div>
+                    </div>
+                    <div class="column is-7 registerCol2">
+                        <p class="title is-size-3 has-text-purple50">انشاء حساب</p>
+                        <p class="is-size-55 has-text-weight-medium">انشئ حساب للانضمام للمنصة</p>
+                        <br>
+                        <form>
+                            <div class="field">
+                                <label class="label has-text-grey-dark">الاسم الكامل</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" placeholder="ادخل اسمك الثلاثي" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-solid fa-signature"></i>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <div class="field">
+                                <label class="label has-text-grey-dark">رقم هاتف الطالب</label>
+                                <div class="field has-addons">
+                                    <div class="control is-expanded has-icons-left">
+                                        <input class="input has-text-right" type="tel" placeholder="رقم الهاتف" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="field">
+                                <label class="label has-text-grey-dark">رقم هاتف الاب</label>
+                                <div class="control is-expanded has-icons-left">
+                                    <input class="input has-text-right" type="tel" placeholder="رقم هاتف ولي الامر 1" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <div class="field">
+                                <label class="label has-text-grey-dark">رقم هاتف الام</label>
+                                <div class="control is-expanded has-icons-left">
+                                    <input class="input has-text-right" type="tel" placeholder="رقم هاتف ولي الامر 2" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                </div>
+                            </div>
+                              
+                            <div class="columns">
+                                <div class="field column is-half">
+                                    <label class="label has-text-grey-dark">كلمة المرور</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="password" placeholder="ادخل كلمة المرور" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </div>
+                                    <label class="help is-size-65 has-text-centered has-text-danger-dark"></label>
+                                </div>
+        
+                                <div class="field column is-half">
+                                    <label class="label has-text-grey-dark">اعادة كتابة كلمة المرور</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="password" placeholder="اعادة كتابة كلمة المرور" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </div>
+                                    <label class="help is-size-65 has-text-centered has-text-danger-dark"></label>
+                                </div>
+                            </div>
+
+    
+                            <div class="columns">
+                                <div class="field column">
+                                    <label class="label has-text-grey-dark">السنة الدراسية</label>
+                                    <div class="control">
+                                        <div class="select is-fullwidth">
+                                            <select required>
+                                                <option value="2ndSecond">ثاني ثانوي</option>
+                                                <option value="3rdSecond">ثالث ثانوي</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="field column">
+                                    <label class="label has-text-grey-dark">المحافظة</label>
+                                    <div class="control">
+                                        <div class="select is-fullwidth">
+                                            <select required>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="field column">
+                                    <label class="label has-text-grey-dark">النوع</label>
+                                    <div class="control">
+                                        <div class="select is-fullwidth">
+                                            <select required>
+                                                <option value="male">ذكر</option>
+                                                <option value="female">انثى</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="is-flex is-align-items-center is-justify-content-space-between">
+                                <button class="button is-purple50 is-semilarge" id="submit">انشاء حساب</button>
+                                <a href="/login/" class="has-text-weight-semibold has-text-purple70">لدي حساب <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>          
+    </div>
+
+</body>
+</html>
+<script src='/assets/js/main.js'></script>
+
+<script>
+    let passEqualtCheck = false
+    const passwordInputs = [...document.querySelectorAll('[type="password"]')]
+    passwordInputs.forEach((passInp, i)=>{
+        passInp?.addEventListener('change', ()=>{
+            let next = passwordInputs.at(i+1 - 2);
+            if(passInp.value != next.value){
+                passInp.closest(".field").querySelector(".help").textContent = "يجب توافق كلمة المرور";
+                next.closest(".field").querySelector(".help").textContent = "يجب توافق كلمة المرور";
+                passEqualtCheck = false;
+            }else{
+                passInp.closest(".field").querySelector(".help").textContent = "";
+                next.closest(".field").querySelector(".help").textContent = "";
+                passEqualtCheck = true;
+            }
+        })
+    })
+
+    document.getElementById("submit")?.addEventListener("click", function (event) {
+        if (!(passEqualtCheck)) {
+            event.preventDefault()
+            alert("يرجى ادخال البيانات المطلوبة بشكل صحيح")
+        }
+    });
+</script>

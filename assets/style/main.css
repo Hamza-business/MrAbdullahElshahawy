@@ -213,6 +213,9 @@ i {
 .navbar .fas.fa-user-circle {
     color: var(--purple09) !important;
 }
+.navbar .navbar-item.active i.fas.fa-user-circle {
+    color: var(--purpleWhite40) !important;
+}
 .navbar .fa-user{
     font-size: 16px !important;
     padding-left: 5px !important;
@@ -834,5 +837,50 @@ footer.footer {
     flex-direction: column;
     }
 }
+
+
+
+
+.registerCol {
+    background-color: var(--purple50);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.registerCol2 {
+    background-color: var(--purpleWhite10);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+
+.lectures{
+    border-radius: 0 !important;
+}
+.lectsGridParent .card-image {
+    display: block;
+    position: relative;
+    padding: 12px 12px 0 12px;
+}
+.lectsGridParent img{
+    border-radius: 10px !important;
+}
+.lectsGridParent .card {
+    border-radius: 15px;
+}
+.lectsGridParent button.button {
+    margin-top: 10px !important;
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
+
+
+.sheetsGrid .button{
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+
 
 
