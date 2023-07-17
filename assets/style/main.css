@@ -891,6 +891,14 @@ footer.footer {
 
 
 
+.card-content .button.is-gold.is-outlined.is-fullwidth {
+    display: block;
+    white-space: pre-line;
+    height: fit-content;
+    font-size: 15px;
+}
+
+
 
 
 .quizs {
