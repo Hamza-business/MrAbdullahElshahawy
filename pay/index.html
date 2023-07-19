@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>منصة مستر عبدالله الشهاوي</title>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#8e44ad">
+    <meta name="description" content="منصة مستر عبدالله الشهاوي هي منصة تقدم لك شرح منظّم ودقيق مع سهولة الوصول لما تحتاجه.">
+    <meta name="keywords" content="منصة مستر عبدالله الشهاوي, منصة, عبدالله الشهاوي, عربي, اللغة العربية, التعليم الثانوي, الثانوي, عربي ثانوية عامة, مستر عبدالله الشهاوي, المداد, منصة المداد التعليمية, ثانوية عامة, مصر">
+    <meta name="author" content="Mr Abdullah Elshahawy">
+    
+    <link rel="icon" href="/assets/images/logo/navlogo.png">
+    <link rel='stylesheet' type='text/css' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/bulma-rtl.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/main.css'>
+</head>
+
+<body>
+
+
+    <div style="display: none" id="pageTitle"></div>
+    <header class="navbar" role="navigation" aria-label="main navigation" class="linksMenu">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="/">
+                <img src="/assets/images/logo/navlogo.png">
+            </a>
+            <button class="navbar-burger" aria-label="menu" onclick="navshow()" wfd-invisible="true">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    
+        <div id="navbarElements" class="navbar-menu navbarElements">
+            <div class="navbar-start">
+                <a href="/" whtpg="home" class="navbar-item"><i class="fas fa-home"></i><span>الرئيسية</span></a>
+                <a href="/learn" whtpg="learn" class="navbar-item"><i class="fa-solid fa-tv"></i><span>المحاضرات</span></a>
+                <a href="/books" whtpg="sheets" class="navbar-item"><i class="fa-solid fa-book"></i><span>الكتب</span></a>
+            </div>
+    
+            <div class="navbar-end">
+                <button class="button none navbar-item responsivePadd" showPop="notifications"><i class="fa-solid fa-bell"></i></button>
+                <a class="navbar-item" whtpg="dashboard" href="/dashboard"><i class="fas fa-user-circle"></i></a>
+                <div class="navbar-item">
+                    <a href="/login" class="button is-purple70 is-outlined borderBold textBold"><i class="fa-regular fa-user"></i> الدخول \ الانضمام</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero is-fullheight Payways">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-9">
+                        <form action="" class="box isPay">
+                            <h1 class="has-text-purple70 is-size-2 has-text-centered has-text-weight-semibold">الدفع</h1>
+                            <h2 class="is-size-4 has-text-weight-semibold has-text-grey-dark">الاشتراك في</h2>
+                            <p class="has-text-purple70 has-text-weight-bold is-size-6">الشهر الأول من شرح المنهج للصف الثالث الثانوي - <span class="has-text-yellow90">150</span> ج.م</p>
+
+                            <div class="inputField">
+                                <input value="" required="" class="input is-gold has-text-weight-bold" type="number">
+                                <span class="is-size-4">ج.م</span>
+                            </div>
+
+                            <h2 class="is-size-4 has-text-weight-semibold has-text-grey-dark">طريقة الدفع:</h2>
+                            <div id="selectedShow" class="is-flex is-align-items-center is-justify-content-space-between selectedShow active" onclick="payWayShow()">
+                                <div class="is-size-5">
+                                    <p class="has-text-white has-text-weight-medium">الدفع بواسطة: <span id="payWay" class="has-text-weight-normal has-text-grey-lighter">لم يتم اختيار طريقة دفع</span></p>
+                                    <p class="subtitle is-6 has-text-yellow70 has-text-weight-medium" id="taxs">الضريبة غير محدده</p>
+                                </div>
+                                <div class="is-size-5">
+                                    <i class="fas fa-chevron-down" id="iconro"></i>
+                                </div>
+                            </div>
+
+                            <section id="section" class="column is-flex is-flex-direction-column pySection active">
+                                <div class="block cols">
+                                    <div class="columns is-multiline">
+                                        
+                                        <div class="is-size-5 paywayo column is-6">
+                                            <div class="row">
+                                                <div class="is-flex is-justify-content-space-between">
+                                                    <img src="/assets/images/f1.jpg">
+                                                    <img src="/assets/images/f2.png">
+                                                </div>
+                                                <span class="has-text-white togeto">ماكينات فوري</span>
+                                                <p class="is-size-6 has-text-grey-lighter togeto"> يضاف 2.5% + 4.5 ج.م مصاريف ادارية </p>
+                                                
+                                                <label class="radio">
+                                                    <input type="radio" id="">
+                                                </label>     
+                                            </div>                              
+                                        </div>
+
+                                        <div class="is-size-5 paywayo column is-6">
+                                            <div class="row">
+                                                <div class="is-flex is-justify-content-space-between">
+                                                    <img src="/assets/images/bank.png">
+                                                    <img src="/assets/images/fod.png">
+                                                </div>
+                                                <span class="has-text-white togeto">فودافون كاش</span>
+                                                <p class="is-size-6 has-text-grey-lighter togeto"> يضاف 1.5% + 2 ج.م مصاريف ادارية </p>
+                                                
+                                                <label class="radio">
+                                                    <input type="radio" id="">
+                                                </label>     
+                                            </div>                              
+                                        </div>
+
+                                        <div class="is-size-5 paywayo column is-6">
+                                            <div class="row">
+                                                <div class="is-flex is-justify-content-space-between">
+                                                    <img src="/assets/images/bank.png">
+                                                    <img src="/assets/images/vis.png">
+                                                </div>
+                                                <span class="has-text-white togeto">فيزا</span>
+                                                <p class="is-size-6 has-text-grey-lighter togeto"> يضاف 1.5% + 2 ج.م مصاريف ادارية </p>
+                                                
+                                                <label class="radio">
+                                                    <input type="radio" id="">
+                                                </label>     
+                                            </div>                              
+                                        </div>
+
+                                        <div class="is-size-5 paywayo column is-6">
+                                            <div class="row">
+                                                <div class="is-flex is-justify-content-space-between">
+                                                    <img src="/assets/images/op.png">
+                                                    <img src="/assets/images/opay.png">
+                                                </div>
+                                                <span class="has-text-white togeto">اوباي</span>
+                                                <p class="is-size-6 has-text-grey-lighter togeto"> يضاف 1.5% + 3 ج.م مصاريف ادارية </p>
+                                                
+                                                <label class="radio">
+                                                    <input type="radio" id="">
+                                                </label>     
+                                            </div>                              
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="notes">
+                                المبلغ بعد اضافة المصاريف الادارية:
+                                <input type="number" class="inpu" name="amountDeducted">
+                            </div>
+
+                            <div class="field">
+                                <button class="button is-purple50 is-semilarge">استكمال الدفع</button>
+                            </div>
+
+                            <hr>
+
+                            <p class="foct">اذا شحنت من قبل و تريد تأكيد المعاملة، اضغط <a href="" class="has-text-yellow90 has-text-weight-semibold">هنا</a> </p>
+                            <p class="has-text-weight-bold is-size-65">المصاريف الإدارية خاصة بشركات التحويل وليس للمنصة دخل فيها.</p>
+                            <p class="has-text-yellow90 has-text-weight-bold is-size-65">لا يمكن استرداد أية مبالغ مالية تم قبولها على المنصة تحت أي مسمى كان</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+<script src='/assets/js/main.js'></script>
+
+<script>
+    function payWayShow(){
+        let clicko = document.getElementById("selectedShow");
+        clicko.classList.toggle("active");
+        let iconro = document.getElementById("iconro");
+        iconro.classList.toggle("active");
+        let paySection = document.getElementById("section");
+        paySection.classList.toggle("active");
+    }
+
+    let clicko = document.getElementById("selectedShow");
+    let payo = document.getElementById("payWay");
+    let ta = document.getElementById("taxs");
+    let elese = document.querySelectorAll(".paywayo");
+    elese.forEach((ele)=>{
+        ele.addEventListener("click",()=>{
+            let pa1 = ele.querySelectorAll(".togeto")[0];
+            let ta1 = ele.querySelectorAll(".togeto")[1];
+            payo.innerHTML = pa1.textContent
+            ta.innerHTML = ta1.textContent
+            elese.forEach((el)=>{
+                el.classList.remove("active")
+            })
+            ele.classList.add("active")
+        })
+    })
+</script>
