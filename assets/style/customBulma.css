@@ -202,3 +202,26 @@
 }
 
 
+
+
+
+
+
+.is-size-55 {
+    font-size: 1.15rem;
+}
+.is-size-65 {
+    font-size: 0.85rem !important;
+}
+
+
+
+.button.is-semismall {
+    padding: 20px 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input::placeholder{
+    color: #000 !important;
+}

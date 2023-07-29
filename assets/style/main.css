@@ -425,11 +425,11 @@ i {
     position: fixed;
     top: 0;
     z-index: 1000;
-    transition: 2s 1s background;
+    transition: 0.2s 0.2s background;
     display: none;
 }
 .prettyNotifications.active{
-    transition: 0.8s background;
+    transition: 0.2s background;
     background-color: #0d092147;
 }
 .notisParent {
@@ -442,7 +442,7 @@ i {
     z-index: 10001;
     position: relative;
     margin-top: -100%;
-    transition: 5s margin;
+    transition: 3s margin;
 }
 .prettyNotifications.active .notisParent{
     margin-top: 20px;
@@ -1325,4 +1325,179 @@ footer.footer {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+video, .videoConteainer figure {
+    margin: auto !important;
+    display: block;
+    width: 80%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.lectureWatch {
+    padding-top: 20px !important;
+    padding-bottom: 40px !important;
+}
+
+.videoConteainer {
+    padding-bottom: 0px;
+    display: none;
+}
+.videoConteainer.show {
+    display: block;
+}
+.lectureView{
+    padding-bottom: 50px;
+}
+.lectureView .vid{
+    padding: 0 20px;
+}
+.lectureView .descr{
+    background-color: var(--purpleWhite30);
+    padding: 15px 20px 20px;
+    border: 2px solid var(--purple30);
+    border-right: 5px solid var(--purple30);
+    max-height: 220px;
+    overflow-y: auto;
+    border-radius: 10px 5px 5px 10px;
+}
+.lectureView .descr p{
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+.lectureView .descr ul{
+    padding: 0 20px;
+    font-size: 17px;
+}
+.lectureView .des{
+    border-right: 6px solid var(--blue-color);
+}
+.lectureView .sou{
+    border-right: 6px solid #535d75;
+}
+.lectureView .que{
+    border-right: 6px solid var(--purple30);
+}
+.lectureView .totora{
+    overflow-x: hidden;
+}
+.lectureView .vid {
+    position: relative;
+    height: 0;
+    padding-bottom: 315px !important;
+}
+
+
+
+.tab p {
+    white-space: normal;
+}
+
+
+.tabs p.lecture-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--iPurpleD) !important;
+}
+
+.descr .card i {
+    color: var(--purpleWhite10);
+    line-height: 150%;
+}
+
+.descr a.column {
+    padding: .75rem !important;
+    border: 0 !important;
+    text-decoration: none !important;
+    transition: 0.2s transform;
+}
+
+.descr a.column .card {
+    border-radius: 15px;
+    background: var(--graySh);
+    box-shadow: 0 0 15px -5px var(--iPurple100);
+}
+
+.descr a.column .card .card-content img {
+    border-radius: 10px;
+}
+
+.descr a.column:hover {
+    transform: scale(102%);
+}
+
+
+.descr p {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+}
+.descr > p{
+    margin-bottom: 30px !important;
+}
+.descr .card-content {
+    padding: 8px 5px;
+}
+.descr .column.is-10.contenta {
+    background-color: var(--purpleWhite10);
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--purple50);
+}
+.descr .column.takeBgPrp {
+    border-radius: 10px 0 0 10px;
+    background: var(--gradientP18D)
+}
+
+
+
+
+
+
+.lectData .subscripteP.specialHero{
+    background: var(--purple60);
+    border-radius: 15px;
+}
+.lectData .subscripteP.specialHero img{
+    border-radius: 15px;
+}
+.lectData .subscripteP.specialHero::after{
+    display: none;
+}
+.lectData .subscripteP.specialHero::before{
+    display: none;
+}
+.has-text-spWhite {
+    color: var(--purpleWhite20);
+}
+.lecDate {
+    margin-bottom: 10px;
+}
+.lecTit {
+    margin-bottom: 4px;
+    font-weight: 600 !important;
+}
+.lecDes {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.lecList {
+    margin-bottom: 8px;
 }
