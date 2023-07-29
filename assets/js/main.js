@@ -32,7 +32,7 @@ function prettyNotiControl(){
     prettyNoti.style.display = "block";
     setTimeout(() => {
         prettyNoti.classList.add("active");
-    }, 0);
+    }, 10);
     setTimeout(() => {
         prettyNoti.classList.remove("active");
         setTimeout(() => {
