@@ -1501,3 +1501,60 @@ iframe {
 .lecList {
     margin-bottom: 8px;
 }
+
+
+
+
+.outlineDown::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid var(--purple50);
+    width: 80px;
+    margin-top: 8px;
+}
+.bookCard {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bookCard hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 1.5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.5;
+}
+.faketag{
+    background: var(--purple40);
+    color: var(--whiteBg);
+    font-size: 13px;
+    width: 100%;
+    opacity: 0.85;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.totalo{
+    margin-bottom: 10px;
+}
+.bookCard .input {
+    border-radius: 20px;
+}
+.bookPrice {
+    background: var(--purple30);
+    color: var(--whiteBg);
+    text-align: center;
+}
+.dBox{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card.bookCard .card-content {
+    padding: 11px;
+}
+.bookPriceBox{
+    margin-top: 10px;
+}

@@ -225,3 +225,30 @@
 .input::placeholder{
     color: #000 !important;
 }
+
+
+
+
+hr {
+    background: linear-gradient(to right, var(--purple60), var(--purple90));
+}
+
+.tag.is-prpl {
+    background: var(--iPurple80);
+    color: var(--whiteBg);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tag.is-prpl.full {
+    width: 100%;
+}
+.tag.is-prpl.trans {
+    opacity: 0.8;
+}
+
+
+
+.list {
+    list-style: decimal;
+}
