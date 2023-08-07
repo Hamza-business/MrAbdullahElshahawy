@@ -252,3 +252,20 @@ hr {
 .list {
     list-style: decimal;
 }
+
+
+
+
+
+
+.file.is-prpl .file-cta {
+    background: var(--purple50) !important;
+    color: var(--grey05) !important;
+    justify-content: center;
+}
+
+.file.is-prpl .file-label:first-child {
+    width: 100%;
+    border: 2px dashed var(--purple50);
+    border-radius: 15px;
+}

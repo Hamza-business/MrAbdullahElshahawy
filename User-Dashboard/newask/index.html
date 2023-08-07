@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="HTML">
+<head>
+    <title>لوحة التحكم | طالب</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#8e44ad">
+    <link rel="icon" href="/assets/images/logo/navlogo.png">
+    <!-- assets -->
+    <link rel='stylesheet' type='text/css' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/bulma-rtl.css'>
+    <link rel='stylesheet' type='text/css' href='/assets/style/main.css'>
+</head>
+<body>
+
+    <div style="display: none" id="pageTitle">dashboard</div>
+    <header class="navbar" role="navigation" aria-label="main navigation" class="linksMenu">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="/">
+                <img src="/assets/images/logo/navlogo.png">
+            </a>
+            <button class="navbar-burger" aria-label="menu" onclick="navshow()" wfd-invisible="true">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    
+        <div id="navbarElements" class="navbar-menu navbarElements">
+            <div class="navbar-start">
+                <a href="/" whtpg="home" class="navbar-item"><i class="fas fa-home"></i><span>الرئيسية</span></a>
+                <a href="/learn" whtpg="learn" class="navbar-item"><i class="fa-solid fa-tv"></i><span>المحاضرات</span></a>
+                <a href="/books" whtpg="sheets" class="navbar-item"><i class="fa-solid fa-book"></i><span>الكتب</span></a>
+            </div>
+    
+            <div class="navbar-end">
+                <button class="button none navbar-item responsivePadd" showPop="notifications"><i class="fa-solid fa-bell"></i></button>
+                <a class="navbar-item" whtpg="dashboard" href="/dashboard"><i class="fas fa-user-circle"></i></a>
+                <div class="navbar-item">
+                    <a href="/login" class="button is-purple70 is-outlined borderBold textBold"><i class="fa-regular fa-user"></i> الدخول \ الانضمام</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="sideMenuIcon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="sideBarDb active">
+        <a class="lisLink active" href="#">الصفحة الحالية</a>
+
+        <a class="lisLink" href="#"><span>المزيد</span> <span><i class="fa-solid fa-angle-left"></i></span></a>
+        <div class="list">
+            <a class="lisLink" href="#">mlnkbjvb</a>
+
+            <a class="lisLink" href="#"><span>المزيد</span> <span><i class="fa-solid fa-angle-left"></i></span></a>
+            <div class="list">
+                <a class="lisLink" href="#">;'lkjb</a>
+                <a class="lisLink" href="#">;lmnmbb</a>
+            </div>
+
+            <a class="lisLink" href="#">;lkknjb</a>
+
+            <a class="lisLink" href="#"><span>المزيد</span> <span><i class="fa-solid fa-angle-left"></i></span></a>
+            <div class="list">
+                <a class="lisLink" href="#">ughv</a>
+                <a class="lisLink" href="#">hughvcfghb</a>
+            </div>
+        </div>
+
+        <a class="lisLink" href="#">,lmknjb </a>
+        <a class="lisLink" href="#">jojihjbh</a>
+
+        <a class="lisLink" href="#"><span>المزيد</span> <span><i class="fa-solid fa-angle-left"></i></span></a>
+        <div class="list">
+            <a class="lisLink" href="#">kjhnbvc</a>
+            <a class="lisLink" href="#">oijhgf</a>
+        </div>
+    </div>
+
+
+
+    <div class="contentBox dbContentBox">
+        <h1 class="title is-size-3 has-text-weight-semibold is-gold has-text-purple70">طرح سؤال</h1>
+        <form>
+            <div class="field">
+                <label class="label">اسم الدرس</label>
+                <div class="control">
+                    <div class="select is-fullwidth">
+                        <select required>
+                            <option value="lesson1">درس 1</option>
+                            <option value="lesson2">درس 2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">الرسالة\السؤال</label>
+                <textarea></textarea>
+            </div>          
+
+            <div class="field">
+                <label class="label">صورة السؤال</label>
+                <div class="file has-name is-prpl">
+                    <label class="file-label is-flex is-flex-direction-column">
+                        <input class="file-input" type="file" onchange="viewImage(this)" accept="image/*">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">اختر ملف...</span>
+                        </span>
+                        <span class="file-name"></span>
+                    </label>
+                </div>
+            </div>
+
+            <br>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-purple50 is-semilarge" type="submit">ارسال</button>
+                </div>
+                <div class="control">
+                    <button class="button is-danger">إلغاء</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
+
+<script src='/assets/js/main.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<script>
+    let burgerIconSide = document.querySelector(".sideMenuIcon")
+    let sider = document.querySelector(".sideBarDb")
+    burgerIconSide?.addEventListener('click', ()=>{
+        sider.classList.toggle('active');
+    })
+    
+    let lisLinks = document.querySelectorAll('.lisLink');
+    lisLinks.forEach((ele)=>{
+        if(ele.nextElementSibling?.classList.contains('list')){
+            ele.addEventListener('click', (e)=>{
+                e.preventDefault()
+                ele.nextElementSibling.classList.toggle('active');
+                ele.querySelector('i').classList.toggle('deg90');
+            })
+        }
+    })
+</script>
+
+                    
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/dataTables.bulma.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#allStudents')?.DataTable();
+    });
+</script>
+
+<script>
+    function viewImage(input) {
+        const fileName = input.files[0].name;
+        const fileNameSpan = input.parentNode.parentNode.querySelector('.file-name');
+        fileNameSpan.textContent = fileName;
+    }
+</script>
+
+<script src="https://cdn.tiny.cloud/1/md6pfmgsvm2oc4qrjkujru60o0a711nrcklx1657fgxlwv87/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    });
+</script>
